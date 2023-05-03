@@ -1,0 +1,13 @@
+aside {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: rgb(38, 15, 104);
+    transition: left 0.3s ease-in-out;
+}
+
+aside.open {
+    left: 0;
+}

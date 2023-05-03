@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio-sesion.component.css']
 })
 export class InicioSesionComponent{
-
-  constructor() {}
+  constructor(private router: Router) {}
 
   iniciarSesion() {
-    
+    this.router.navigate(['/app.component']);
   }
 }
+

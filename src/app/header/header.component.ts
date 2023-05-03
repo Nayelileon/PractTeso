@@ -13,4 +13,9 @@ export class HeaderComponent {
   logout() {
     this.router.navigate(['/inicio-sesion']);
   }
+
+  menu() {
+    this.router.navigate(['/sidebar']);
+  }
 }
+
