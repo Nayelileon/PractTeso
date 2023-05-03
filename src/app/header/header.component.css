@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    display: flex;
+
+}
+
+.container {
+    width: 1250px;
+    background-color: rgb(38, 15, 104);
+    height: 70px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 80px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:hover {
+   text-decoration: underline;
+}
