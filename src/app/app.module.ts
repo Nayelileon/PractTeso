@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { InspeccionFiscalComponent } from './inspeccion-fiscal/inspeccion-fiscal.component';
+import { RequerimientosComponent } from './requerimientos/requerimientos.component';
+import { OrdenClausuraComponent } from './orden-clausura/orden-clausura.component';
 
 
 const routes: Routes = [
@@ -14,6 +17,9 @@ const routes: Routes = [
   { path: 'app.component', component: AppComponent },
   { path: 'inicio-sesion', component: InicioSesionComponent},
   { path: 'sidebar', component: SidebarComponent},
+  { path: 'requerimientos', component: RequerimientosComponent},
+  { path: 'inspeccion-fiscal', component: InspeccionFiscalComponent},
+  { path: 'orden-clausura', component: OrdenClausuraComponent},
   
 ];
 
@@ -24,7 +30,10 @@ export const routing = RouterModule.forRoot(routes);
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    InicioSesionComponent
+    InicioSesionComponent,
+    InspeccionFiscalComponent,
+    RequerimientosComponent,
+    OrdenClausuraComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,9 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  isSidebarOpen = false;
 
-  Sidebar() {
+  isSidebarOpen = false;
+  constructor(private router: Router) {}
+
+  menu() {
     this.isSidebarOpen = !this.isSidebarOpen;
+  }
+
+  inspeccion() {
+    this.router.navigate(['/inspeccion-fiscal']);
+  
+  }
+
+  requerimiento() {
+    this.router.navigate(['/requerimientos']);
+  }
+
+  orden() {
+    this.router.navigate(['/orden-clausura']);
+
   }
 }
