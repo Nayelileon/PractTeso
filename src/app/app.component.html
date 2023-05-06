@@ -1,5 +1,8 @@
 <app-header (toggleMenu)="sidebar.menu()"></app-header>
-<router-outlet></router-outlet> 
+
 <app-sidebar #sidebar></app-sidebar>
-  
-  
+
+<div class="container" [class.open]="sidebar.isSidebarOpen">
+
+    <router-outlet></router-outlet> 
+</div>

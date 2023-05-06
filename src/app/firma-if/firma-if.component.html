@@ -1,0 +1,110 @@
+<div class="container">
+    <label>Firmar inspeccion</label>
+
+    <p>Inspeccion</p>
+
+    <div class="tabla">
+        <label>Direccion *</label>
+        <input type="text" name="direccion" placeholder="direccion" required="required"/>
+
+        <label>Numero de folio *</label>
+        <input type="text" name="folio" placeholder="folio" required="required"/>
+
+        <label>RFC *</label>
+        <input type="text" name="rfc" placeholder="rfc" required="required"/>
+
+        <label>Vigencia</label>
+        <input type="text" onfocus="(this.type='date')" name="fecha" placeholder="Fecha de inicio"/>
+
+        <!-- <input class="form-control" placeholder="Fecha de inicio" bsDatepicker [(bsValue)]="selectedDate"> -->
+
+        <div class="permisos">
+
+            <p>Permisos y licencias</p>
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Licencia para operar el establecimiento comercial, industrial o servicio relacionadas a las actividades que lleva a cabo dentro del mismo.</label>
+            </div>       
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Permiso de Anuncio.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Permiso de Estacionamiento Exclusivo (linea amarilla).</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Permiso de ocupacion de Via Publica con bienes.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Permiso para venta de bebidas alcoholicas.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Permiso de aparatos mecanicos, electromecanicos, electricos de diversion, musicales, videojuegos y otros.</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="myCheckbox"/>
+                <label for="myCheckbox">Otros</label>
+            </div>
+
+        </div>
+        
+        <div class="observacion">
+            <p>Observaciones</p>
+            
+            <div class="obser">
+                <label for="Observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+            </div>
+        </div>
+
+        <div class="atendio">
+            <label>Nombre*</label>
+            <input type="text" name="nombre" required="required"/>
+
+            <label>Identificado*</label>
+            <input type="text" name="identificado" required="required"/>
+
+            <label>Numero*</label>
+            <input type="text" name="numero" required="required"/>
+
+            <label>Expedida*</label>
+            <input type="text" name="expedida" required="required"/>
+        </div>
+
+        <div class="firma">
+            <p>Firmas</p>
+            <div class="firmas">
+                <div>
+                    <label for="inspector">INSPECTOR(ES)</label>
+                    <textarea id="inspector" name="inspector"></textarea>
+                </div>
+
+                <div>
+                    <label for="atendio">PERSONA QUE ATENDIO</label>
+                    <textarea id="atendio" name="atendio"></textarea>
+                </div>
+
+                <div>
+                    <label for="testigo">TESTIGOS</label>
+                    <textarea id="testigo" name="testigo"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="cancelar" (click)="cancelar()">X Cancelar</button>
+        <button class="guardar" (click)="showAlert()">Guardar</button>
+    </div>
+    
+</div>

@@ -1,3 +1,17 @@
+.formato {
+    margin-top: 100px;
+}
+
+.nuevo {
+    margin-top: 95px;
+}
+
+.sidebar-open {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
 button {
-    margin-top: 12px;
+    cursor: pointer;
 }

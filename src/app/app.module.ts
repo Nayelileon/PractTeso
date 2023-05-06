@@ -10,6 +10,9 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { InspeccionFiscalComponent } from './inspeccion-fiscal/inspeccion-fiscal.component';
 import { RequerimientosComponent } from './requerimientos/requerimientos.component';
 import { OrdenClausuraComponent } from './orden-clausura/orden-clausura.component';
+import { FirmaIFComponent } from './firma-if/firma-if.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [
@@ -20,6 +23,7 @@ const routes: Routes = [
   { path: 'requerimientos', component: RequerimientosComponent},
   { path: 'inspeccion-fiscal', component: InspeccionFiscalComponent},
   { path: 'orden-clausura', component: OrdenClausuraComponent},
+  { path: 'firma-if', component: FirmaIFComponent},
   
 ];
 
@@ -33,10 +37,13 @@ export const routing = RouterModule.forRoot(routes);
     InicioSesionComponent,
     InspeccionFiscalComponent,
     RequerimientosComponent,
-    OrdenClausuraComponent
+    OrdenClausuraComponent,
+    FirmaIFComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes)
+    BrowserModule, RouterModule.forRoot(routes), [BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule
+  ]
   ],
   providers: [],
   bootstrap: [AppComponent]

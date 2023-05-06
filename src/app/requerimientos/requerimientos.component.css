@@ -1,0 +1,12 @@
+.container {
+    margin-top: 80px;
+}
+
+label {
+    margin-left: 20px;
+}
+
+button {
+    margin-left: 20px;
+    cursor: pointer;
+}

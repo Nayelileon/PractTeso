@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inspeccion-fiscal',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./inspeccion-fiscal.component.css']
 })
 export class InspeccionFiscalComponent {
+
+  constructor(private router: Router) {}
+
+  nuevo() {
+    this.router.navigate(['/firma-if']);
+  }
 
   eliminar() {
 
@@ -15,7 +22,4 @@ export class InspeccionFiscalComponent {
 
   }
 
-  nuevo() {
-
-  }
 }

@@ -1,0 +1,62 @@
+.permisos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.permisos.label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 12px;
+} 
+
+input[type='checkbox'] {
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
+.atendio {
+    margin-top: 32px;
+}
+
+.firmas {
+    display: flex;
+}
+
+textarea {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    padding-left: 900px;
+}
+
+.guardar {
+    background-color: rgb(72, 76, 139);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.cancelar {
+    background-color: white;
+    border: none;
+    color: rgb(72, 76, 139);
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

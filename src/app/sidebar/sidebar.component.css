@@ -22,4 +22,5 @@ aside.open {
 
 button {
     margin-top: 16px;
+    cursor: pointer;
 }
