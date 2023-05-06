@@ -6,6 +6,10 @@
     margin-top: 95px;
 }
 
+label {
+    margin-left: 20px;
+}
+
 .sidebar-open {
     width: calc(100% - 250px);
     margin-left: 250px;
@@ -14,4 +18,8 @@
 
 button {
     cursor: pointer;
+    background-color: rgb(72, 76, 139);
+    border-color: rgb(72, 76, 139);
+    border-radius: 4px;
+    color: white;
 }

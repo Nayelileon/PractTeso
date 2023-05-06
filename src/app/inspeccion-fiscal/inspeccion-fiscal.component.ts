@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DxButtonModule } from 'devextreme-angular';
+import { DxDataGridModule } from 'devextreme-angular';
 
 @Component({
   selector: 'app-inspeccion-fiscal',

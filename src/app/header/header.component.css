@@ -5,12 +5,16 @@ header {
     width: 100%;
     height: 70px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
-    background-color: rgb(38, 15, 104);
+    background-color: rgb(125, 134, 199);
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .container {
-    background-color: rgb(38, 15, 104);
+    background-color: rgb(67, 78, 158);
     display: flex;
 }
 
@@ -29,5 +33,10 @@ nav a:hover {
 }
 
 button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
     cursor: pointer;
 }
+

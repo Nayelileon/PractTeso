@@ -1,13 +1,18 @@
 <div class="container">
     <header>
-     <nav>
-        <ul>
-            <button (click)="menu()">
-             MENU
-            <i class="fa fa-bars"></i>
-            </button>
-            <button (click)="logout()">CERRAR SESION</button>
-        </ul>
-      </nav>
+      <div *ngIf="isLoggedIn; else loginButton"> </div>
+       <nav>
+          <ul>
+              <button class="usuario" (click)="logout()">Usuario</button>
+          </ul>
+        </nav>
+     
+
+      <ng-template #loginButton>
+        <button (click)="menu()">
+          MENU
+           <i class="fa fa-bars"></i>
+         </button>
+      </ng-template>
     </header>
 </div>

@@ -14,7 +14,6 @@ import { FirmaIFComponent } from './firma-if/firma-if.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 const routes: Routes = [
 
   { path: 'app.component', component: AppComponent },
@@ -41,7 +40,8 @@ export const routing = RouterModule.forRoot(routes);
     FirmaIFComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), [BsDatepickerModule.forRoot(),
+    BrowserModule, RouterModule.forRoot(routes),
+    [BsDatepickerModule.forRoot(),
     BrowserAnimationsModule
   ]
   ],

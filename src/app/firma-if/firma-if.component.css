@@ -1,3 +1,7 @@
+.container {
+    margin-top: 90px;
+}
+
 .permisos {
     display: flex;
     flex-direction: column;
@@ -46,6 +50,7 @@ textarea {
     cursor: pointer;
     margin-left: 10px;
     margin-top: 12px;
+    border-radius: 4px;
 }
 
 .cancelar {

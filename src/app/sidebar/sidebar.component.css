@@ -4,7 +4,7 @@ aside {
     position: fixed;
     top: 0;
     left: -200px;
-    background-color: rgb(38, 15, 104);
+    background-color: rgb(125, 134, 199);
     transition: left 0.3s ease-in-out;
     flex: 1;
     z-index: 0;
@@ -22,5 +22,8 @@ aside.open {
 
 button {
     margin-top: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
     cursor: pointer;
 }
