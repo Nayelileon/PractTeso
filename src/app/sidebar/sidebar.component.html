@@ -1,9 +1,21 @@
 <aside [class.open]="isSidebarOpen">
 
      <div class="side">   
-          <button (click)="inspeccion()">INSPECCION FISCAL</button>
-          <button (click)="requerimiento()">REQUERIMIENTOS</button>
-          <button (click)="orden()">ORDEN DE CLAUSURAS</button>
+          <div class="inspect" (click)="inspeccion()">
+               <i class="fa fa-file-text" aria-hidden="true"></i>
+               <button >INSPECCION FISCAL</button>
+          </div>
+
+         <div class="inspect" (click)="requerimiento()">
+               <i class="fa fa-window-close" aria-hidden="true"></i>
+               <button >REQUERIMIENTOS</button>
+         </div> 
+          
+         <div class="inspect" (click)="orden()">
+               <i class="fa fa-user-times" aria-hidden="true"></i>
+               <button >ORDEN DE CLAUSURAS</button>
+         </div>
+          
      </div>
 </aside> 
 

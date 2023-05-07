@@ -1,6 +1,6 @@
-<app-header (toggleMenu)="sidebar.menu()"></app-header>
+<app-header (toggleMenu)="sidebar.menu()" [islogin]="islogin"></app-header>
 
-<app-sidebar #sidebar></app-sidebar>
+<app-sidebar #sidebar [islogin]="islogin"></app-sidebar>
 
 <div class="container" [class.open]="sidebar.isSidebarOpen">
 

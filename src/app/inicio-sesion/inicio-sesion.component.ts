@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./inicio-sesion.component.css']
 })
 export class InicioSesionComponent{
+
   constructor(private router: Router) {}
 
   iniciarSesion() {

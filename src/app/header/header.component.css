@@ -4,13 +4,19 @@ header {
     left: 0;
     width: 100%;
     height: 70px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
     background-color: rgb(125, 134, 199);
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+}
+
+i.fa.fa-bars{
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+    padding-left: 16px;
 }
 
 .container {
@@ -22,6 +28,7 @@ nav li {
     display: inline-block;
     margin-right: 30px;
     margin-left: 80px;
+    padding-right: 25px;
 }
 
 nav a {
@@ -32,11 +39,19 @@ nav a:hover {
    text-decoration: underline;
 }
 
+ul {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
 button {
     background-color: transparent;
     color: #fff;
     border: none;
-    font-size: 16px;
+    font-size: large;
     cursor: pointer;
 }
 
+ul i.fa {
+    color: white;
+}

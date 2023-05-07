@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+
+  @Input()
+    set islogin(islogin: boolean){
+      this.isSidebarOpen = islogin;
+  }
 
   isSidebarOpen = false;
   constructor(private router: Router) {}

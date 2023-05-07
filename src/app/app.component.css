@@ -12,6 +12,7 @@
 }
 
 .container.open {
+    width: calc(100%-200px);
     left: 200px;
 }
 

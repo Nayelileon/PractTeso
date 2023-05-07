@@ -1,18 +1,14 @@
 <div class="container">
     <header>
-      <div *ngIf="isLoggedIn; else loginButton"> </div>
-       <nav>
-          <ul>
-              <button class="usuario" (click)="logout()">Usuario</button>
-          </ul>
-        </nav>
-     
-
-      <ng-template #loginButton>
-        <button (click)="menu()">
-          MENU
-           <i class="fa fa-bars"></i>
-         </button>
-      </ng-template>
+      <div *ngIf="!islogin"></div>
+      <div *ngIf="islogin">
+        <i class="fa fa-bars" aria-hidden="true" (click)="menu()"></i>        
+      </div>
+      <nav>
+        <ul (click)="logout()">
+            <i class="fa" [class.fa-user-circle]="islogin" [class.fa-home]="!islogin" aria-hidden="true"></i>
+            <button class="usuario" >{{islogin ? 'Usuario' : 'Bienvenido' }}</button>
+        </ul>
+      </nav>
     </header>
 </div>

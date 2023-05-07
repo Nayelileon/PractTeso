@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,14 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isLoggedIn: boolean = false;
-
+  
+  @Input() islogin: boolean = false; 
   @Output() toggleMenu = new EventEmitter<never>();
 
   constructor(private router: Router) {}
 
   logout() {
-    this.isLoggedIn = false;
+    
     this.router.navigate(['/inicio-sesion']);
   }
 
