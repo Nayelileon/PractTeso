@@ -1,40 +1,212 @@
 .container {
-    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.cabeza {
+    background-color: lightsteelblue;
+    height: 52px;
+    margin-top: 70px;
+    width: 100%;
+}
+
+h1 {
+    width: 314px;
+    padding-top: 9px;
+    margin-left: 32px;
+    font-size: large;
+}
+
+.tabla {
+    border: 3px groove lightsteelblue;
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+
+.titulo {
+    border-bottom: 3px groove lightsteelblue;
+    height: 35px;
+}
+
+.titu {
+    padding-top: 6px;
+    padding-left: 19px;
+    font-weight: 400;
+}
+
+.inspeccion {
+    border-bottom: 2px groove lightsteelblue;
+    height: 211px;
+}
+
+.dato1 {
+    border-bottom: 2px groove lightsteelblue;
+    display: flex;
+    height: 40px;
+}
+
+i.fa.fa-file-text-o {
+    padding-top: 11px;
+}
+
+.insp {
+    margin-top: 11px;
+    font-size: medium;
+    font-weight: 450;
+}
+
+.labels {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 19px;
+}
+
+.direc {
+    display: grid;
+    padding-left: 14px;
+    height: 51px;
+}
+
+.folio {
+    display: grid;
+    padding-right: 8px;
+}
+
+.rfc {
+  display: grid;
+  margin-left: 14px;
+  height: 51px;  
+}
+
+.vigencia {
+    border-bottom: 2px groove lightsteelblue;
+    height: 132px;
+}
+
+.dato2 {
+    border-bottom: 2px groove lightsteelblue;
+    display: flex;
+}
+
+.fecha {
+    height: 46px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 31px;
+    padding-top: 6px;
+}
+
+.fech {
+    width: 176.35px;
+    border: 2px groove;
+
 }
 
 .permisos {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+    border-bottom: 2px groove lightsteelblue;
+    height: 245px;
 }
 
-.permisos.label {
-    font-weight: bold;
-    margin-right: 10px;
-    margin-top: 12px;
-} 
+.dato3 {
+    border-bottom: 2px groove lightsteelblue; 
+    display: flex;
+    height: 43px;
+    
+}
+
+i.fa.fa-file-text {
+    padding-top: 12px;
+}
+
+.perm {
+    padding-top: 11px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.checks {
+    height: 140px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 16px;
+    padding-left: 13px;
+}
+
+.check {
+    padding-right: 24px;
+    padding-bottom: 9px;
+}
+
+.check4 {
+    padding-right: 23px;
+}
 
 input[type='checkbox'] {
     transform: scale(1.5);
-    margin-right: 5px;
+    margin-right: 13px;
 }
 
-.atendio {
-    margin-top: 32px;
+.observacion {
+    height: 187.5px;
+    border-bottom: 2px groove lightsteelblue; 
 }
 
-.firmas {
+.obse {
+    border-bottom: 2px groove lightsteelblue; 
     display: flex;
 }
 
-textarea {
-    margin-left: 15px;
-    margin-right: 10px;
+.atendio {
+    height: 200px;
+    border-bottom: 2px groove lightsteelblue; 
+}
+
+.dato4 {
+    border-bottom: 2px groove lightsteelblue; 
+    height: 41px;
+    display: flex;
+}
+
+.peraten {
+    height: 134px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 14px;
+    gap: 10px;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.name {
+    display: grid;
+    height: 54px;
+}
+
+.dato5 {
+    border-bottom: 2px groove lightsteelblue;
+    display: flex;
+}
+
+.firmas {
+    padding-top: 11px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 128.5px;
+}
+
+.in {
+    height: 89px;
+    width: 205.017px;
+
 }
 
 .buttons {
     display: flex;
-    padding-left: 900px;
+    padding-left: 1038px;
 }
 
 .guardar {

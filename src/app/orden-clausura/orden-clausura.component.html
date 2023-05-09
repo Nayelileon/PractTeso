@@ -1,27 +1,41 @@
 <div class="cont">
-    <p>Negocios con Orden de Clausura</p>
+    <div class="cabeza">
+        <p>Negocios con Orden de Clausura</p>
+    </div>
 
     <div class="lista">
-        <p>Lista de negocios con orden de clausura</p>
-
-        <div class="tabla">
-            <label>Nombre</label>
-
-            <label>Demon</label> 
-
-            <label>Domicilio</label>
-
-            <label>Cuenta</label>
-
-            <label>Acta</label>
-            
-            <label>Giro</label>
-
-            <label>Inspector</label>
-
-            <label>Acciones</label>
-
-            <button (click)="orden()">Orden de Clausura</button>
+        <div class="titulo">
+            <p>Lista de negocios con orden de clausura</p>
         </div>
-    </div>
+        <div class="formato">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Demon</th>
+                        <th scope="col">Domicilio</th>
+                        <th scope="col">Cuenta</th>
+                        <th scope="col">Acta</th>
+                        <th scope="col">Giro</th>
+                        <th scope="col">Inspector</th>
+                        <th scope="col">Acciones</th> 
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dato of data">
+                        <td scope="row">{{dato.nombre}}</td>
+                        <td>{{ dato.demon }}</td>
+                        <td>{{ dato.domicilio }}</td>
+                        <td>{{ dato.cuenta }}</td>
+                        <td>{{ dato.acta }}</td>
+                        <td>{{ dato.giro }}</td>
+                        <td>{{ dato.inspector }}</td>
+                        <td scope="row" class="botones">
+                            <button (click)="orden()"> Orden de Clausura</button>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>    
 </div>

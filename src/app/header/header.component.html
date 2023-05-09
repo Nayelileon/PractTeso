@@ -6,8 +6,9 @@
       </div>
       <nav>
         <ul (click)="logout()">
-            <i class="fa" [class.fa-user-circle]="islogin" [class.fa-home]="!islogin" aria-hidden="true"></i>
-            <button class="usuario" >{{islogin ? 'Usuario' : 'Bienvenido' }}</button>
+          <i class="fa" [class.fa-user-circle]="islogin" [class.fa-home]="!islogin" aria-hidden="true"></i>
+          <button class="usuario" >{{islogin ? 'Usuario' : 'Bienvenido' }}</button>
+          
         </ul>
       </nav>
     </header>

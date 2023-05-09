@@ -16,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
 
-  { path: 'app.component', component: AppComponent },
   { path: 'inicio-sesion', component: InicioSesionComponent},
   { path: 'sidebar', component: SidebarComponent},
   { path: 'requerimientos', component: RequerimientosComponent},

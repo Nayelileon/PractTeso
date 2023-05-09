@@ -21,15 +21,18 @@ export class SidebarComponent {
   }
 
   inspeccion() {
+    this.isSidebarOpen = false;
     this.router.navigate(['/inspeccion-fiscal']);
   
   }
 
   requerimiento() {
+    this.isSidebarOpen = false;
     this.router.navigate(['/requerimientos']);
   }
 
   orden() {
+    this.isSidebarOpen = false;
     this.router.navigate(['/orden-clausura']);
 
   }

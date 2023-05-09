@@ -1,111 +1,154 @@
 <div class="container">
-    <label>Firmar inspeccion</label>
 
-    <p>Inspeccion</p>
+    <div class="cabeza">
+        <h1>Firmas de Inspección fiscal</h1>
+    </div>
 
     <div class="tabla">
-        <label>Direccion *</label>
-        <input type="text" name="direccion" placeholder="direccion" required="required"/>
+        <div class="titulo">
+          <p class="titu">Firmar inspeccion</p>
+        </div>
 
-        <label>Numero de folio *</label>
-        <input type="text" name="folio" placeholder="folio" required="required"/>
+        <div class="inspeccion">
+            <div class="dato1">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <p class="insp" >Inspección</p>
+            </div>    
 
-        <label>RFC *</label>
-        <input type="text" name="rfc" placeholder="rfc" required="required"/>
+            <div class="labels">
+                <div class="direc">
+                    <label>Direccion *</label>
+                    <input type="text" name="direccion" placeholder="Direccion" required="required"/>
+                </div>
 
-        <label>Vigencia</label>
+                <div class="folio">
+                    <label>Numero de folio *</label>
+                    <input type="text" name="folio" placeholder="Folio" required="required"/>
+                </div>
 
-        <input type="text" onfocus="(this.type='date')" name="fecha" placeholder="Fecha de inicio"/>
-        <input type="text"  onfocus="(this.type='date')" name="fechafin" placeholder="Fecha Final"/>
+                <div class="rfc">
+                    <label>RFC *</label>
+                    <input type="text" name="rfc" placeholder="RFC" required="required"/>
+                </div>
 
+            </div>
+        </div>
+       
+        <div class="vigencia">
+            <div class="dato2">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <p class="insp">Vigencia</p>
+            </div>
+            <div class="fecha">
+                <input class="fech" type="text" onfocus="(this.type='date')" name="fecha" placeholder="Fecha de inicio"/>
+                <input class="fech" type="text"  onfocus="(this.type='date')" name="fechafin" placeholder="Fecha Final"/>
+            </div>
+        </div>
 
         <div class="permisos">
-
-            <p>Permisos y licencias</p>
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Licencia para operar el establecimiento comercial, industrial o servicio relacionadas a las actividades que lleva a cabo dentro del mismo.</label>
-            </div>       
-
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Permiso de Anuncio.</label>
+            <div class="dato3">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <p class="perm">Permisos y licencias</p>
             </div>
 
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Permiso de Estacionamiento Exclusivo (linea amarilla).</label>
+            <div class="checks">
+                <div class="check">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Licencia para operar el establecimiento comercial, industrial o servicio relacionadas a las actividades que lleva a cabo dentro del mismo.</label>
+                </div>       
+                <div class="check1">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Permiso de Anuncio.</label>
+                </div>
+                <div class="check2">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Permiso de Estacionamiento Exclusivo (linea amarilla).</label>
+                </div>
+                <div class="check3">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Permiso de ocupacion de Via Publica con bienes.</label>
+                </div>
+                <div class="check4">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Permiso para venta de bebidas alcoholicas.</label>
+                </div>
+                <div class="check5">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Permiso de aparatos mecanicos, electromecanicos, electricos de diversion, musicales, videojuegos y otros.</label>
+                </div>
+                <div class="check6">
+                    <input type="checkbox" id="myCheckbox"/>
+                    <label for="myCheckbox">Otros</label>
+                    <textarea type="text" name="otro"></textarea>
+                </div>
             </div>
-
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Permiso de ocupacion de Via Publica con bienes.</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Permiso para venta de bebidas alcoholicas.</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Permiso de aparatos mecanicos, electromecanicos, electricos de diversion, musicales, videojuegos y otros.</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="myCheckbox"/>
-                <label for="myCheckbox">Otros</label>
-            </div>
-
         </div>
         
         <div class="observacion">
-            <p>Observaciones</p>
+            <div class="obse">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <p class="insp">Observaciones</p>
+            </div>
             
             <div class="obser">
-                <label for="Observaciones">Observaciones:</label>
                 <textarea id="observaciones" name="observaciones"></textarea>
             </div>
         </div>
 
         <div class="atendio">
-            <label>Nombre*</label>
-            <input type="text" name="nombre" required="required"/>
+            <div class="dato4">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <p class="insp">Persona que atendió</p>
+            </div>
 
-            <label>Identificado*</label>
-            <input type="text" name="identificado" required="required"/>
+            <div class="peraten">
+                <div class="name">
+                    <label>Nombre*</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required="required"/>
+                </div>
 
-            <label>Numero*</label>
-            <input type="text" name="numero" required="required"/>
+                <div class="name">
+                    <label>Identificado*</label>
+                    <input type="text" name="identificado" placeholder="Identificado" required="required"/>
+                </div>
 
-            <label>Expedida*</label>
-            <input type="text" name="expedida" required="required"/>
+                <div class="name">
+                    <label>Número*</label>
+                    <input type="text" name="numero" placeholder="Número" required="required"/>
+                </div>
+
+                <div class="name">
+                    <label>Expedida*</label>
+                    <input type="text" name="expedida" placeholder="Expedida" required="required"/>
+                </div>
+
+            </div>
         </div>
 
         <div class="firma">
-            <p>Firmas</p>
+            <div class="dato5">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <p class="insp">Firmas</p>
+            </div>
+            
             <div class="firmas">
                 <div>
-                    <label for="inspector">INSPECTOR(ES)</label>
-                    <textarea id="inspector" name="inspector"></textarea>
+                    <textarea class="in" id="inspector" name="inspector" placeholder="INSPECTOR(ES)"></textarea>
                 </div>
 
                 <div>
-                    <label for="atendio">PERSONA QUE ATENDIO</label>
-                    <textarea id="atendio" name="atendio"></textarea>
+                    <textarea class="in" id="atendio" name="atendio" placeholder="PERSONA QUE ATIENDE"></textarea>
                 </div>
 
                 <div>
-                    <label for="testigo">TESTIGOS</label>
-                    <textarea id="testigo" name="testigo"></textarea>
+                    <textarea class="in" id="testigo" name="testigo" placeholder="TESTIGO(S)"></textarea>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="buttons">
-        <button class="cancelar" (click)="cancelar()">X Cancelar</button>
-        <button class="guardar" (click)="showAlert()">Guardar</button>
-    </div>
     
+        <div class="buttons">
+            <button class="cancelar" (click)="cancelar()">X Cancelar</button>
+            <button class="guardar" (click)="showAlert()">Guardar</button>
+        </div>
+    </div>
 </div>

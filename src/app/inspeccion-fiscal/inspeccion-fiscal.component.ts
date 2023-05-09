@@ -8,114 +8,29 @@ import { Router } from '@angular/router';
 })
 export class InspeccionFiscalComponent {
 
-  data: any;
+  data: any;  
   constructor(private router: Router) {}
   ngOnInit(): void {
     this.data = [
       {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "guadalupe nayeli leon ochoa" ,
-          "demon": "kda",
-          "domicilio": "lostrigales1695",
-          "cuenta": "34234874823",
-          "acta": "ACT002",
-          "giro": "GIRO002",
-          "inspector": "Moonie"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      },
-      {
-          "nombre": "carlos humberto soto reyes" ,
-          "demon": "eldiablo001",
-          "domicilio": "praderas de margarita 1416",
-          "cuenta": "2810006593",
-          "acta": "ACT001",
-          "giro": "GIRO001",
-          "inspector": "Cruper"
-      }
-      
+          "nombre": "OROZCO GARCIA DULCE ANAHY" ,
+          "demon": "SALON CANDY LASHES AN NAILS",
+          "domicilio": "AV. GARCIA #17601 - FRACC. LOS REYES",
+          "cuenta": "262646",
+          "acta": "46378",
+          "giro": "SALON DE BELLEZA",
+          "inspector": "GARCIA GUERRERO MANUEL"
+      }      
   ]
   }
 
   nuevo() {
-    this.router.navigate(['/firma-if']);
-  }
-
-  eliminar() {
-
+    
   }
 
   editar() {
 
+    this.router.navigate(['/firma-if']);
   }
 
 }

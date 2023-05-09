@@ -12,7 +12,7 @@ export class InicioSesionComponent{
   constructor(private router: Router) {}
 
   iniciarSesion() {
-    this.router.navigate(['/app.component']);
+    this.router.navigate(['/']);
   }
 }
 
