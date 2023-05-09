@@ -145,6 +145,10 @@ i.fa.fa-file-text {
     padding-right: 23px;
 }
 
+.seis {
+    margin-left: 10px;
+}
+
 input[type='checkbox'] {
     transform: scale(1.5);
     margin-right: 13px;
@@ -158,6 +162,14 @@ input[type='checkbox'] {
 .obse {
     border-bottom: 2px groove lightsteelblue; 
     display: flex;
+}
+
+.ob {
+    padding-top: 2px;
+    width: 196.017;
+    height: 97px;
+    margin-left: 24px;
+    margin-top: 14px;
 }
 
 .atendio {
@@ -196,6 +208,7 @@ input[type='checkbox'] {
     display: grid;
     grid-template-columns: auto auto auto;
     height: 128.5px;
+    margin-left: 10px;
 }
 
 .in {
